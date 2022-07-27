@@ -1,0 +1,64 @@
+.justify {
+   text-align: justify;
+}
+
+.center{
+    align-items: center; 
+ }
+ .container  {
+
+     /*Display flex é utilizado para organizar os elementos de forma flexivel*/
+     display: flex;
+     flex-flow: row;     
+     justify-content: right;/* horizontal */
+     align-items: center;/* vertical */
+     border: 5px;/* borda da div, pode ser redimensionada e ter cores */
+     padding: 20px;/* padding é o espaçamento entre a borda dos elementos  e a borda da div*/
+     margin: 20px;/*margin dá espaçamento externo em relação aos outros itens da tela */
+ }
+ #menu li {
+    display: inline;
+    padding: 20px;
+ }
+ #menu li a {
+    text-decoration: none;
+    color: black;
+ }
+ /*hover deixa o elemento colorido quando o mouse passe por cima dele */
+ #menu li a:hover {
+    color: grey;
+ }
+ .backfundo{
+   width: 100vw;
+   height: 100vh;
+
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-image: url(../Beige\ Minimalist\ Profile\ LinkedIn\ Banner.png); /* background imagem de fundo no site*/
+   background-size: cover; /* cover mantém o backgroud alinhado na tela, sem cortar a imagem*/
+}
+ .br-50 {
+    border-radius: 50%;
+ }
+ .wh {
+    width: 300px;
+    height: 300;
+ }
+ .tm-social {
+   width: 30px;
+   height: 30px;
+   
+
+ }
+.p-30 {
+   padding: 30px;
+}
+.mb-50 {
+   margin-bottom: 50px;
+}
+.ml-50 {
+   margin-left: 50px;
+}

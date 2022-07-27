@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./assets/styles/estilo.css">
+</head>
+<body>
+    <ul id="menu">
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="contato.html">Contato</a>
+        </li>
+    </ul>
+    <h1 class="center">Entre em contato comigo!</h1>
+
+    <div class="container mb-50">
+        <div>
+          <!--tag para formulário: form-->
+    <form>
+        
+        <h2>Mande um recado</h2>
+        <!--tag label é a tag para descrever um elemento solicitado no formulário-->
+        <label for="nome">Nome:</label> <br>
+        <input type="text" id="nome" onkeyup="validaNome()">
+        <div id="txtNome"> </div>
+        <!--br é uma tag que pula linha, não é boa prática, mas está sendo utilizado apenas para teste/aprendizado-->
+        
+        <br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" onkeyup="validaEmail()">
+        <div id="txtEmail"> </div>
+        
+        <br>
+        <label for="assunto">Assunto:</label>
+        <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+        <div id="txtAssunto"> </div>
+        
+        <br>
+        <button onclick="enviar()">Enviar</button>
+
+     </form>
+    </div>
+
+    <div class="ml-50">
+        <h2>Endereço</h2>
+    <p>Av. Paulista, 1313 - Cerqueira César</p>
+    <p>São Paulo - SP, 01311-200</p>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.923978785937!2d-46.3292812559049!3d-23.535236513091117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8932b9841%3A0x60639b4f97398ab4!2sCentro%20Cultural%20Fiesp!5e0!3m2!1sen!2sbr!4v1658449713347!5m2!1sen!2sbr" 
+    width="400" 
+    height="150" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
+
+    </div>
+    </div>
+  
+
+    
+    <footer>
+
+        <div class="container">
+            <a href="https://www.linkedin.com/in/thabatadepaula/" target="_blank">
+                <img class="tm-social p-30" src="./assets/linkedin.png" alt="Logo do LinkedIn"> 
+            </a>
+
+            <a href="https://github.com/thabatadepaula" target="_blank">
+                <img class="tm-social p-30" src="./assets/github.png" alt="Logo do Github">
+            </a>
+
+            <a href="https://www.instagram.com/tthayoliiver/" target="_blank">
+                <img class="tm-social p-30" src="./assets/instagram.png" alt="Logo do Instagram">
+            </a>
+            
+        </div>
+
+    <p class="center">
+        Todos os direitos reservados: Thabata de Paula &copy
+    </p>
+
+    </footer>
+
+    <script src="./assets/scripts/scripts.js"></script>
+
+   
+    
+</body>
+</html>
